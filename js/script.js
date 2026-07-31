@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NEXO — script.js
+   OKKII — script.js
    Sem dependências externas. Comentado para facilitar manutenção.
    ========================================================================== */
 (function () {
@@ -126,7 +126,7 @@
   const cookieBanner = document.getElementById("cookieBanner");
   const cookieAccept = document.getElementById("cookieAccept");
   const cookieReject = document.getElementById("cookieReject");
-  const COOKIE_KEY = "nexo_cookie_consent";
+  const COOKIE_KEY = "okkii_cookie_consent";
 
   function getConsent() {
     try {
@@ -203,7 +203,7 @@
         tipo: form.tipo.value,
         mensagem: form.mensagem.value.trim(),
         consentimentoLGPD: true,
-        origem: "site-nexo",
+        origem: "site-okkii",
         enviadoEm: new Date().toISOString(),
       };
 
@@ -221,7 +221,7 @@
         } else {
           // Modo demonstração (sem backend configurado ainda)
           await new Promise((resolve) => setTimeout(resolve, 500));
-          console.info("[NEXO] Formulário validado. Configure CONTACT_ENDPOINT em js/script.js para enviar de verdade.", payload);
+          console.info("[OKKII] Formulário validado. Configure CONTACT_ENDPOINT em js/script.js para enviar de verdade.", payload);
         }
 
         status.textContent = "Recebemos sua solicitação! Em breve entraremos em contato.";
