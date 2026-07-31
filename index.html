@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXO — Sites, E-commerce e Automações com n8n</title>
+<title>OKKII — Sites, E-commerce e Automações com n8n</title>
 <meta name="description" content="Criamos sites institucionais, e-commerce, plataformas de grande porte e portfólios sob medida, além de automações com n8n para melhorar seu posicionamento digital.">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph -->
-<meta property="og:title" content="NEXO — Sites e Automações com n8n">
+<meta property="og:title" content="OKKII — Sites e Automações com n8n">
 <meta property="og:description" content="Sites sob medida, e-commerce e automações que conectam sua operação de ponta a ponta.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 
 <!-- Segurança básica no lado do cliente (reforce políticas equivalentes no servidor) -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://*.app.n8n.cloud https://*.n8n.cloud; frame-ancestors 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src https://fonts.gstatic.com; img-src 'self' data: https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://*.app.n8n.cloud https://*.n8n.cloud; frame-ancestors 'none';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,14 +28,14 @@
 <!-- ===================== HEADER ===================== -->
 <header class="header">
   <div class="container header-inner">
-    <a href="#top" class="logo" aria-label="NEXO — página inicial">
+    <a href="#top" class="logo" aria-label="OKKII — página inicial">
       <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="7" cy="8" r="3.4" fill="#4f86ff"/>
         <circle cx="25" cy="8" r="3.4" fill="#9b6bff"/>
         <circle cx="16" cy="24" r="3.4" fill="#2fe8b0"/>
         <path d="M9.8 9.8 13.5 21.5M22.2 9.8 18.5 21.5M10.4 8H21.6" stroke="#3a4270" stroke-width="1.6" stroke-linecap="round"/>
       </svg>
-      NEXO
+      OKKII
     </a>
 
     <nav class="nav-desktop" aria-label="Navegação principal">
@@ -206,7 +206,7 @@
     <div class="container">
       <div class="diff-wrap">
         <div>
-          <p class="eyebrow">Por que a NEXO</p>
+          <p class="eyebrow">Por que a OKKII</p>
           <h2 style="font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 2rem;">Leveza, segurança e uma operação conectada</h2>
           <div class="diff-list">
             <div class="diff-item">
@@ -353,7 +353,7 @@
 
           <div class="contact-detail">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="1.6" opacity="0"/><path d="m3 6 9 6 9-6M3 6v12h18V6H3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-            <div><strong>E-mail</strong><span>contato@nexo.com.br</span></div>
+            <div><strong>E-mail</strong><span>contato@okkii.com.br</span></div>
           </div>
           <div class="contact-detail">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.6 21 3 14.4 3 6a2 2 0 0 1 1-2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
@@ -426,7 +426,7 @@
             <circle cx="7" cy="8" r="3.4" fill="#4f86ff"/><circle cx="25" cy="8" r="3.4" fill="#9b6bff"/><circle cx="16" cy="24" r="3.4" fill="#2fe8b0"/>
             <path d="M9.8 9.8 13.5 21.5M22.2 9.8 18.5 21.5M10.4 8H21.6" stroke="#3a4270" stroke-width="1.6" stroke-linecap="round"/>
           </svg>
-          NEXO
+          OKKII
         </a>
         <p>Sites e automações que conectam sua operação digital de ponta a ponta.</p>
         <div class="footer-social">
@@ -452,14 +452,14 @@
       </div>
       <div class="footer-col">
         <h5>Contato</h5>
-        <p>contato@nexo.com.br</p>
+        <p>contato@okkii.com.br</p>
         <p>(00) 00000-0000</p>
         <a href="#contato">Solicitar orçamento</a>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> NEXO. Todos os direitos reservados.</span>
+      <span>&copy; <span id="year"></span> OKKII. Todos os direitos reservados.</span>
       <div class="footer-bottom-links">
         <a href="privacidade.html">Política de Privacidade</a>
         <a href="privacidade.html#cookies">Cookies</a>
@@ -478,5 +478,58 @@
 </div>
 
 <script src="js/script.js"></script>
+
+<!-- ================= Chatbot OKKII ================= -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<style>
+  :root {
+    /* === Cores da marca (alinhadas à paleta do site — troque se quiser outra) === */
+    --chat--color-primary: #4f86ff;
+    --chat--color-primary-shade-50: #3d6ee0;
+    --chat--color-primary-shade-100: #2f57ba;
+    --chat--color-secondary: #2fe8b0;
+    --chat--color-white: #ffffff;
+    --chat--color-dark: #0a0e1b;
+    --chat--color-light: #f8f9fb;
+
+    /* === Formato / espaçamento === */
+    --chat--border-radius: 14px;
+    --chat--spacing: 1rem;
+    --chat--font-family: 'Inter', system-ui, sans-serif;
+
+    /* === Cabeçalho === */
+    --chat--header--background: #4f86ff;
+    --chat--header--color: #ffffff;
+    --chat--heading--font-size: 1.25rem;
+    --chat--subtitle--font-size: 0.9rem;
+
+    /* === Balões de mensagem === */
+    --chat--message--bot--background: #f1f0fb;
+    --chat--message--bot--color: #101330;
+    --chat--message--user--background: #4f86ff;
+    --chat--message--user--color: #ffffff;
+    --chat--message--border-radius: 12px;
+    --chat--message--font-size: 1rem;
+
+    /* === Botão flutuante === */
+    --chat--toggle--background: #4f86ff;
+    --chat--toggle--hover--background: #3d6ee0;
+    --chat--toggle--size: 64px;
+
+    /* === Janela do chat === */
+    --chat--window--width: 400px;
+    --chat--window--height: 600px;
+
+    /* === Campo de digitação === */
+    --chat--input--background: #ffffff;
+    --chat--input--text-color: #101330;
+    --chat--input--border: 1px solid #e0e0e6;
+  }
+</style>
+
+<script type="module" src="js/chat-widget.js"></script>
+<!-- =============== Fim Chatbot OKKII =============== -->
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-# NEXO — Site institucional
+# OKKII — Site institucional
 
 Site estático (HTML + CSS + JS puro, sem frameworks) pronto para abrir no VSCode.
 
@@ -23,7 +23,7 @@ Não há build, dependências de npm ou passo de compilação — é só HTML/CS
 
 ## O que personalizar antes de publicar
 
-- **Nome da marca "NEXO"**: escolhido como placeholder (remete a "conexão", combinando com sites + automações). Troque em `index.html`, `privacidade.html` e no `<title>`/meta tags pelo nome real da sua empresa.
+- **Nome da marca "OKKII"**: escolhido como placeholder (remete a "conexão", combinando com sites + automações). Troque em `index.html`, `privacidade.html` e no `<title>`/meta tags pelo nome real da sua empresa.
 - **Contatos**: e-mail, WhatsApp e endereço estão com dados de exemplo em `index.html` (seção `#contato` e rodapé) e em `privacidade.html`.
 - **Redes sociais**: os links do rodapé (`href="#"`) precisam ser substituídos pelos seus perfis reais.
 - **Portfólio**: a seção `#portfolio` usa cartões ilustrativos (mockups em CSS). Substitua por prints reais de projetos entregues assim que tiver.
@@ -42,6 +42,16 @@ O formulário em `#contato` já está pronto para ser conectado a um **Webhook d
 4. A partir daí, cada envio do formulário chega no seu n8n em JSON (`nome`, `email`, `telefone`, `tipo`, `mensagem`, `consentimentoLGPD`, `origem`, `enviadoEm`) e você pode ligar o fluxo a planilha, CRM, e-mail ou WhatsApp.
 
 Enquanto `CONTACT_ENDPOINT` estiver vazio, o formulário valida os campos normalmente mas não envia dados para nenhum servidor (modo demonstração).
+
+## Chatbot (widget de chat do n8n)
+
+O site já vem com o chatbot da OKKII (biblioteca `@n8n/chat`) instalado em `index.html` e `privacidade.html`, logo antes de `</body>`:
+
+- O script fica em `js/chat-widget.js` (módulo externo, não inline — a `Content-Security-Policy` do `<head>` só libera scripts de `'self'` e `cdn.jsdelivr.net`).
+- As cores do widget (bloco `<style>` com variáveis `--chat--...`) já foram ajustadas para a paleta do site (azul `#4f86ff` / menta `#2fe8b0`) em vez do roxo padrão — troque os hex se quiser outra combinação.
+- A fonte usada é a `Inter`, já carregada pelo site, para não adicionar mais uma fonte externa.
+- **Se adicionar novas páginas** ao site, cole o mesmo bloco (link do CSS + `<style>` + `<script type="module" src="js/chat-widget.js">`) antes do `</body>` de cada uma.
+- O `webhookUrl` aponta para o seu workflow do n8n — se trocar de workflow, atualize a URL em `js/chat-widget.js`.
 
 ## Segurança — o que já está incluído e o que falta configurar no servidor
 
